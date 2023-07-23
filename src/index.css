@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -12,10 +12,11 @@
 }
 
 :root {
-    --color-bg: #F2F9F1;
-    --color-bg-varians: #DDEEDF;
-    --color-primary: #388E3C;
-    --color-primary-varians: #8BC34A;
+    --color-bg: #EDF3F5;
+    --color-bg-varians: #D2E2E2;
+    --color-primary: #3F7C88;
+    --color-primary-varians: #A5DBDC;
+    --color-white : white;
     --color-black: black;
     --color-dark: #393E46;
 
@@ -41,7 +42,7 @@ body {
     opacity: 1;
     background-image:  linear-gradient(var(--color-bg-varians) 2.4000000000000004px, transparent 2.4000000000000004px), linear-gradient(to right, var(--color-bg-varians) 2.4000000000000004px, var(--color-bg) 2.4000000000000004px);
     background-size: 48px 48px;
-    background: var(--color-bg);
+    background: var(--color-white);
 }
 
 span {
@@ -49,6 +50,11 @@ span {
 }
 
 /* ================ GENERAL STYLES ================ */
+
+.centeringitem {
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .container {
     width: var(--container-width-lg);
