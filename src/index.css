@@ -115,8 +115,9 @@ a:hover {
 }
 
 .btn-primary {
-    background: linear-gradient(-90deg, var(--color-primary) 0, var(--color-primary-varians) 100%);
+    background: linear-gradient(180deg, var(--color-primary) 0, var(--color-primary-varians) 100%);
     color: var(--color-bg);
+    border: none;
 }
 
 img {
