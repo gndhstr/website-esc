@@ -6,6 +6,5 @@ const kegiatan = () => {
     <div>kegiatan</div>
   )
 }
-import './kegiatan.css'
 
 export default kegiatan
