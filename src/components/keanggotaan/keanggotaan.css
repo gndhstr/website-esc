@@ -1,6 +1,6 @@
 .hero__anggota {
     display: flex;
-    margin-top: 2rem;
+    padding-top: 2rem;
     height: 100vh;
 }
 
@@ -16,10 +16,20 @@
     margin: auto;
 }
 
+
+/* ========== MEDIA QUERIES (MED) ========== */
+@media screen and (max-width : 1024px) {
+    .hero__anggota {
+        height: auto;
+        padding-top: 5rem;
+    }
+}
+
 /* ========== MEDIA QUERIES (SML) ========== */
 @media screen and (max-width : 600px) {
     .hero__anggota {
         flex-direction: column;
+        height: auto;
     }
 
     .heroa__left {
@@ -29,4 +39,5 @@
     .heroa__right {
         order: 1;
     }
+
 }
