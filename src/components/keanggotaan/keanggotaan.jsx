@@ -3,7 +3,13 @@ import './keanggotaan.css'
 
 const keanggotaan = () => {
   return (
-    <div>keanggotaan</div>
+    <div>
+      <div className=''>
+      </div>
+      <div>
+
+      </div>
+    </div>
   )
 }
 
