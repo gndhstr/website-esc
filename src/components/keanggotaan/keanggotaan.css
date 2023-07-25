@@ -1,0 +1,12 @@
+.hero__anggota {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.heroa__left {
+    margin: auto;
+}
+
+.heroa__right {
+    margin: auto;
+}
