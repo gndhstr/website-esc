@@ -42,6 +42,15 @@
     width: 2rem;
 }
 
+.nav__btn {
+    background: transparent;
+}
+
+.nav__btn:hover {
+    background: transparent;
+    color: var(--color-primary);
+}
+
 /* ========== MEDIA QUERIES (SML) ========== */
 @media screen and (max-width : 600px) {
 

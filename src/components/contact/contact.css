@@ -1,0 +1,135 @@
+
+
+.contact__container {
+    padding-top: 4.5rem;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.contact__left2 {
+    background: rgb(165,219,220);
+    background: linear-gradient(317deg, rgba(165,219,220,1) 0%, rgba(63,124,136,1) 82%);
+    border-radius: 2rem 2rem 0 0;
+}
+
+.left__2 {
+    display: grid;
+    grid-template-columns: 40% 55%; 
+    padding-right: 3rem; 
+}
+.left__bot {
+    margin-top: 2rem;
+    color: white;
+    padding-top: 1rem;
+}
+
+.left__bot p {
+    margin: 1rem 0;
+    font-weight: 300;
+    font-size: small;
+}
+
+.left__bot li {
+    font-weight: 300;
+    font-size: small;
+}
+
+.background__contact {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background-color: var(--color-primary);
+}
+
+/* form section */
+
+.form__section {
+    background: var(--color-bg);
+    height: max-content;
+    padding: 1rem 2rem 1rem 2rem;
+    z-index: 1;
+    margin-bottom: -16rem;
+}
+
+.gird {
+    z-index: -99;
+}
+
+.form__section h2 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    padding-left: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn__submit {
+    padding: 0.5rem 2rem;
+}
+
+
+footer p{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+
+    font-weight: 400;
+    color: white;
+    font-size: small;
+    text-shadow: 4px 4px 16px rgba(0,0,0,0.6);
+}
+
+/* ========== MEDIA QUERIES (SML) ========== */
+@media screen and (max-width : 600px) {
+    .contact__container {
+        display: block;
+    }
+    .left__2 {
+        display: block;
+        padding-right: 0;
+        padding-top: 0.1rem;
+    }
+
+    .contact__left2 {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .gird {
+        display: none;
+    }
+
+    .form__section {
+        margin-bottom: 2rem;
+        border-radius: 15px;
+    }
+
+    .left__bot p {
+        margin: 1rem 0;
+        font-weight: 300;
+        font-size: small;
+    }
+    
+    .left__bot li {
+        font-weight: 300;
+        font-size: small;
+    }
+
+    footer p {
+        padding-top: 3rem;
+    }
+}

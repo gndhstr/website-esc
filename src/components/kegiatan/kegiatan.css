@@ -1,0 +1,64 @@
+#kegiatan1 {
+    height: auto;
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+
+.topimage{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 600px;
+    background-image: url('../../assets/himprote.png'); /* Tetapkan gambar sebagai latar belakang */
+    background-size: cover; /* Atur agar gambar menutupi seluruh area */
+    background-position: center; /* Atur posisi gambar */
+    z-index: -1;
+    
+}
+
+.wrapper{
+    margin:150px auto;
+    width:70%;
+}
+
+.text-box{
+    font-size: 16px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    flex:0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding:20px;
+    margin-bottom: 20px;
+    transition: .3s;
+    border: 2px solid transparent;
+}
+.card:hover{
+    border-color:#1d39c4;
+}
+
+/* ========== MEDIA QUERIES (SML) ========== */
+@media screen and (max-width : 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    section >h2 {
+        margin-bottom: 2rem;
+    }
+    
+    .card{
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+}

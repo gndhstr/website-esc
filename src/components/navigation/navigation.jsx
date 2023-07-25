@@ -3,7 +3,7 @@ import './navigation.css'
 
 import esc from '../../assets/esc_white.png'
 
-import {Link} from 'react-scroll'
+import { Button} from 'react-bootstrap';
 
 const navigation = () => {
   return (
@@ -12,11 +12,11 @@ const navigation = () => {
       <img src={esc} alt="" />
       </div>
       <div className='navi__txt'>
-          <Link activeClass='active' spy to="home" >Home</Link>
-          <Link activeClass='active' spy to="kegiatan" >Kegiatan</Link>
-          <Link activeClass='active' spy to="keanggotaan">Keanggotaan</Link>
-          <Link activeClass='active' spy to="prestasi" >Prestasi</Link>
-          <Link activeClass='active' spy to="contact" >Contact</Link>
+          <Button className='nav__btn' href="/Home">Home</Button>
+          <Button className='nav__btn' href="/Kegiatan">Kegiatan</Button>
+          <Button className='nav__btn' href="/Keanggotaan">Keanggotaan</Button>
+          <Button className='nav__btn' href="/Prestasi">Prestasi</Button>
+          <Button className='nav__btn' href="#contact">Contact</Button>
       </div>
     </nav>
   )

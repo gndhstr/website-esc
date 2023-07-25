@@ -6,14 +6,21 @@ import Keanggotaan from './components/keanggotaan/keanggotaan'
 import Prestasi from './components/prestasi/prestasi'
 import Contact from './components/contact/contact'
 
+import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom'
+
+
 function App() {
   return (
     <div className="App">
       <Nav />
-      <Home />
-      <Kegiatan />
-      <Keanggotaan />
-      <Prestasi />
+      <Router>
+        <Routes>
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Kegiatan" element={<Kegiatan />} />
+          <Route path="/Keanggotaan" element={<Keanggotaan />} />
+          <Route path="/Prestasi" element={<Prestasi />} />
+        </Routes>
+      </Router>
       <Contact />
     </div>
   );

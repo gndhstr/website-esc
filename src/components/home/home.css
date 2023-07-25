@@ -66,7 +66,7 @@
 .image__about {
     background: rgb(63,124,136);
     background: linear-gradient(222deg, rgba(63,124,136,1) 70%, rgba(165,219,220,1) 100%);
-    padding: 1.5rem 0;
+    padding: 2.5rem 0;
     margin-left: -2rem;
 }
 
@@ -90,4 +90,73 @@
     background: var(--color-bg);
     height: 100vh;
     margin-top: 5rem;
+}
+
+
+/* vimi */
+
+.vimi__container {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.vimi__card {
+    width: 20rem;
+    background: var(--color-bg);
+    padding: 1.5rem 3rem;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow:  
+    20px 20px 60px #c9cfd0,
+    -20px -20px 60px #ffffff;
+}
+
+.vimi__card h3 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.vimi__card li {
+    text-align: justify;
+    list-style-type: decimal;
+    font-size: small;
+}
+.vimi__card p {
+    text-align: center;
+    font-size: small;
+}
+
+
+/* ========== MEDIA QUERIES (SML) ========== */
+@media screen and (max-width : 600px) {
+    .text__content1 p{
+        display: none;
+    }
+
+    .about__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .image__about {
+        padding: 2.5rem 0;
+        margin-left: 0;
+        border-radius: 25px;
+        order: 1;
+    }
+    .text__about {
+        order: 2;
+        border-radius: 25px;
+    }
+
+    .vimi__container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .vimi__card {
+        width: auto;
+        padding: 1.5rem 2rem;
+    }
 }
