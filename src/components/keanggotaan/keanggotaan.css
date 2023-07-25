@@ -1,6 +1,11 @@
 .hero__anggota {
     display: flex;
     margin-top: 2rem;
+    height: 100vh;
+}
+
+.hero__anggota h1 {
+    font-size: xx-large;
 }
 
 .heroa__left {
@@ -9,4 +14,19 @@
 
 .heroa__right {
     margin: auto;
+}
+
+/* ========== MEDIA QUERIES (SML) ========== */
+@media screen and (max-width : 600px) {
+    .hero__anggota {
+        flex-direction: column;
+    }
+
+    .heroa__left {
+        order: 2;
+    }
+    
+    .heroa__right {
+        order: 1;
+    }
 }
