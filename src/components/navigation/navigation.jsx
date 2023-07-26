@@ -3,7 +3,7 @@ import './navigation.css'
 
 import esc from '../../assets/esc_white.png'
 
-import { Button} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 
 const navigation = () => {
   return (
