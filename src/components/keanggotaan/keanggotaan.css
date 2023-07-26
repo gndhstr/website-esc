@@ -40,6 +40,7 @@
     height: 8rem;
     background: rgb(165,219,220);
     background: linear-gradient(317deg, rgba(165,219,220,1) 0%, rgba(63,124,136,1) 82%);
+    border-radius: 15px;
 }
 
 .card__profile {
@@ -55,6 +56,41 @@
     width: 15rem;
     transition: var(--transition);
 }
+
+
+/* DETAIL SECTION ----------------------------------- */
+
+.title__anggota {
+    padding-top: 6rem;
+    margin: auto;
+}
+
+.title__anggota h3 {
+    text-align: center;
+}
+
+.title__anggota p {
+    text-align: center;
+}
+
+.card__text p {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.card__detail {
+    background: var(--color-bg-varians);
+    border-radius: 15px;
+    gap: 4rem 1rem;
+}
+
+.cardsection__detail {
+    display: flex;
+    gap: 4rem 1rem;
+    flex-wrap: wrap;
+    margin: 4rem auto;
+}
+
 
 /* ========== MEDIA QUERIES (MED) ========== */
 @media screen and (max-width : 1024px) {
