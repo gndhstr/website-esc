@@ -14,7 +14,7 @@ import Kominfo from './components/keanggotaan/details/kominfo'
 import Hardware from './components/keanggotaan/details/hardware'
 
 
-import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 
 function App() {
