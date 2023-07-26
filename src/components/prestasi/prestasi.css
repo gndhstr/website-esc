@@ -1,0 +1,41 @@
+/* HERO SECTION ----------------------------------- */
+
+.hero__anggota {
+    display: flex;
+    padding-top: 2rem;
+    height: 100vh;
+}
+.hero__anggota h1 {
+    font-size: xx-large;
+}
+.heroa__left {
+    margin: auto;
+}
+.heroa__right {
+    margin: auto;
+}
+
+/* ========== MEDIA QUERIES (MED) ========== */
+@media screen and (max-width : 1024px) {
+    .hero__anggota {
+        height: auto;
+        padding-top: 5rem;
+    }
+}
+
+/* ========== MEDIA QUERIES (SML) ========== */
+@media screen and (max-width : 600px) {
+    .hero__anggota {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .heroa__left {
+        order: 2;
+    }
+    
+    .heroa__right {
+        order: 1;
+    }
+
+}
