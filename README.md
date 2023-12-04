@@ -1,3 +1,3 @@
 # ELECTRICAL SCIENCE CLUB WEBSITE
 
-### @gndhstr
+## @gndhstr
